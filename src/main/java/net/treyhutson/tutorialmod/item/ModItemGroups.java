@@ -26,6 +26,8 @@ public class ModItemGroups {
                     .entries(((displayContext, entries) -> {
                         entries.add(new ItemStack(ModBlocks.PINK_GARNET_BLOCK));
                         entries.add(new ItemStack(ModBlocks.RAW_PINK_GARNET_BLOCK));
+                        entries.add(new ItemStack(ModBlocks.PINK_GARNET_ORE));
+                        entries.add(new ItemStack(ModBlocks.PINK_GARNET_DEEPSLATE_ORE));
                     })).build());
 
 
