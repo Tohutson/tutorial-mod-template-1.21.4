@@ -20,6 +20,8 @@ public class ModItemGroups {
                         entries.add(new ItemStack(ModItems.RAW_PINK_GARNET));
 
                         entries.add(ModItems.CHISEL);
+
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
                     })).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(TutorialMod.MOD_ID, "pink_garnet_blocks"),

@@ -2,7 +2,11 @@ package net.treyhutson.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.treyhutson.tutorialmod.block.ModBlocks;
+import net.treyhutson.tutorialmod.entity.ModEntities;
+import net.treyhutson.tutorialmod.entity.client.MantisModel;
+import net.treyhutson.tutorialmod.entity.custom.MantisEntity;
 import net.treyhutson.tutorialmod.item.ModItemGroups;
 import net.treyhutson.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +21,8 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }
